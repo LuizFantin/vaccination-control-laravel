@@ -17,7 +17,7 @@ class AplicacaoFactory extends Factory
             'cidadao_id' => $this->faker->randomDigitNot(0),
             'vacina_id' => $this->faker->randomDigitNot(0),
             'dose' => '1',
-            'data_de_aplicacao' => $this->faker->date('d/m/Y'),
+            'data_de_aplicacao' => $this->faker->date('Y-m-d'),
             'aplicador' => $this->faker->name(),
             'unidade_de_saude' => $this->faker->company()
         ];

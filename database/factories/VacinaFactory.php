@@ -17,7 +17,7 @@ class VacinaFactory extends Factory
             'nome' => $this->faker->word(),
             'fabricante' => $this->faker->company(),
             'lote' => $this->faker->bothify('???-####'),
-            'data_de_validade' => $this->faker->date('d/m/Y'),
+            'data_de_validade' => $this->faker->date('Y-m-d'),
             'quantidade_de_doses' => $this->faker->randomDigitNot(0),
             'doenca' => $this->faker->word(),
         ];
