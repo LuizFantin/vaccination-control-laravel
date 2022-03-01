@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Aplicacao;
 use App\Models\Cidadao;
+use App\Models\Vacina;
 use Illuminate\Http\Request;
 
 class CidadaoController extends Controller
@@ -23,5 +25,13 @@ class CidadaoController extends Controller
     {
         Cidadao::create($request->all());
         return redirect(route('cidadaos'));
+    }
+
+    public function list_vacinas($id)
+    {
+        $cidadao = Cidadao::find($id);
+        $aplicacoes = Aplicacao::where('cidadao_id', $id)->get();
+
+        return view('list_vacinas_por_cidadao', compact('aplicacoes', 'cidadao'));
     }
 }

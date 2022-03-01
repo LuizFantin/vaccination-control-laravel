@@ -24,6 +24,7 @@
                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Telefone</th>
                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Cidade/Estado</th>
                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Plano de Saúde?</th>
+                    <th></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -52,6 +53,9 @@
                             @else
                                 <span class="badge badge-sm bg-gradient-danger">Não Possui</span>
                             @endif
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                            <a type="button" class="btn btn-secondary" href="{{ route('cidadaos.vacinas', $cidadao->id) }}">Ver vacinas</a>
                         </td>
                     </tr>
 

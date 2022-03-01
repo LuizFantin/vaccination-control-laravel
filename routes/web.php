@@ -19,10 +19,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/cidadaos', [CidadaoController::class, 'index'])->name('cidadaos');
 Route::get('/cidadaos/criar', [CidadaoController::class, 'create'])->name('cidadaos.criar');
 Route::post('/cidadaos/store', [CidadaoController::class, 'store'])->name('cidadaos.store');
+Route::get('/cidadaos/vacinas/{id}', [CidadaoController::class, 'list_vacinas'])->name('cidadaos.vacinas');
 
 Route::get('/vacinas', [VacinaController::class, 'index'])->name('vacinas');
 Route::get('/vacinas/criar', [VacinaController::class, 'create'])->name('vacinas.criar');
 Route::post('/vacinas/store', [VacinaController::class, 'store'])->name('vacinas.store');
+Route::get('/vacinas/cidadaos/{id}', [VacinaController::class, 'list_cidadaos'])->name('vacinas.cidadaos');
 
 Route::get('/aplicacoes', [AplicacaoController::class, 'index'])->name('aplicacoes');
 Route::get('/aplicacoes/criar', [AplicacaoController::class, 'create'])->name('aplicacoes.criar');

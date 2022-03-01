@@ -40,7 +40,7 @@
                             <hr>
 
                             <label for="doenca" class="form-label">Doença</label>
-                            <input type="text" class="form-control" id="doenca" name="doenca" placeholder="doenca" required>
+                            <input type="text" class="form-control" id="doenca" name="doenca" placeholder="Doença" required>
                             <hr>
 
                             <button type="submit" class="btn btn-primary">Criar</button>

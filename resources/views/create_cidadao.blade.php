@@ -24,7 +24,7 @@
                             <hr>
 
                             <label for="cpf" class="form-label">CPF</label>
-                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF" required>
+                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF" minlength="11" maxlength="11" required >
                             <hr>
 
                             <label for="data_nascimento" class="form-label">Data de Nascimento</label>

@@ -22,6 +22,7 @@
                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Fabricante</th>
                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Doença</th>
                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Lote</th>
+                    <th></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -47,6 +48,9 @@
                         <td class="align-middle text-center text-sm">
                                 <span class="badge badge-sm bg-gradient-success">{{ $vacina->lote }}</span>
 
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                            <a type="button" class="btn btn-secondary" href="{{ route('vacinas.cidadaos', $vacina->id) }}">Ver vacinados</a>
                         </td>
                     </tr>
 
