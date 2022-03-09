@@ -23,7 +23,7 @@ class VacinaController extends Controller
     public function store(Request $request)
     {
         Vacina::create($request->all());
-        return redirect(route('vacinas'));
+        return redirect(route('vacinas'))->with('success','Vacina cadastrada com sucesso!');
     }
 
     public function list_cidadaos($id)

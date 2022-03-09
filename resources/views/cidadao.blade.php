@@ -55,7 +55,7 @@
                             @endif
                         </td>
                         <td class="align-middle text-center text-sm">
-                            <a type="button" class="btn btn-secondary" href="{{ route('cidadaos.vacinas', $cidadao->id) }}">Ver vacinas</a>
+                            <a type="button" class="btn btn-secondary" href="{{ route('cidadaos.vacinas', $cidadao->id) }}">Ver aplicações</a>
                         </td>
                     </tr>
 

@@ -24,7 +24,7 @@ class CidadaoController extends Controller
     public function store(Request $request)
     {
         Cidadao::create($request->all());
-        return redirect(route('cidadaos'));
+        return redirect(route('cidadaos'))->with('success','Cidadão cadastrado com sucesso!');
     }
 
     public function list_vacinas($id)

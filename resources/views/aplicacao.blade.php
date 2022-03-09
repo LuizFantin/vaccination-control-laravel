@@ -21,7 +21,7 @@
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Vacina</th>
                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Dose</th>
                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Unidade de Saúde</th>
-                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Aplicador</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nome do Aplicador</th>
                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Data da Aplicação</th>
                   </tr>
                 </thead>

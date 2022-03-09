@@ -25,7 +25,10 @@ class AplicacaoController extends Controller
 
     public function store(Request $request)
     {
+        $vacina = Vacina::find($request->vacina_id);
+        if($request->dose > $vacina->quantidade_de_doses)
+            return redirect()->back()->with('danger','Dose não coerente com a quantidade de doses da vacina');
         Aplicacao::create($request->all());
-        return redirect(route('aplicacoes'));
+        return redirect(route('aplicacoes'))->with('success','Aplicação cadastrada com sucesso!');
     }
 }

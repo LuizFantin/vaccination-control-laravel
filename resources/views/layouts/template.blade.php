@@ -77,7 +77,18 @@
   </aside>
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
 
-
+    <div  style="margin-top: 20px; margin-right: 20px;">
+        @if (Session::has('success'))
+        <div class="alert alert-success text-white" role="alert">
+            {{Session::get('success')}}
+        </div>
+        @endif
+        @if (Session::has('danger'))
+        <div class="alert alert-danger text-white" role="alert">
+            {{Session::get('danger')}}
+        </div>
+        @endif
+    </div>
     @yield('content')
 
   </main>
