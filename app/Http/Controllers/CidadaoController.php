@@ -23,6 +23,8 @@ class CidadaoController extends Controller
 
     public function store(Request $request)
     {
+        if(!Cidadao::validaCPF($request->cpf))
+            return redirect()->back()->with('danger', 'CPF inválido');
         Cidadao::create($request->all());
         return redirect(route('cidadaos'))->with('success','Cidadão cadastrado com sucesso!');
     }

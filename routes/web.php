@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return redirect(route('cidadaos'));
+});
+
 Route::get('/cidadaos', [CidadaoController::class, 'index'])->name('cidadaos');
 Route::get('/cidadaos/criar', [CidadaoController::class, 'create'])->name('cidadaos.criar');
 Route::post('/cidadaos/store', [CidadaoController::class, 'store'])->name('cidadaos.store');
